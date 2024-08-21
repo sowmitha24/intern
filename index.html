@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set the innerHTML of the paragraph with id "abc"
+            document.getElementById("abc").innerHTML = "Hello There";
+            document.getElementById("abc").style.color = "red";
+
+            // Attach the click event listener to the button with id "toggle"
+            document.getElementById("toggle").addEventListener("click", function() {
+                alert("thank you");
+            });
+            document.getElementById("colorButton").addEventListener("click", function() {
+    document.body.style.backgroundColor = "lightblue";
+});
+        });
+    </script>
+</head>
+<body>
+    <section>
+        <p id="abc"></p>
+        <button id="toggle">click me</button>
+        <button onclick = "alert('thanks man')">Click to see!</button>
+        <button id="colorButton">Change Background Color</button>
+    </section>
+</body>
+</html>
